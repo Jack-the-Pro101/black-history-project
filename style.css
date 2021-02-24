@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --font: 'Domine';
+    --fontMain: 'Roboto';
+}   
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar-button {
+    border-radius: 5px;
+    color: #3b5cb6;
+    background-color: white;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 50%;
+    transform: translate(-25px,-12px);
+    transition-duration: 0.6s;
+}
+nav {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0px,-50px);
+    position: fixed;
+    transition-duration: 0.6s;
+    z-index: 3;
+    background: white;
+    top: 0;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.795);
+}
+nav a {
+    height: 100%;
+    width: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fontMain);
+    font-size: 30px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    color: black;
+    text-decoration: none;
+    border-left: darkgray solid 1px;
+}
+nav a:last-child {
+    border-right: darkgray solid 1px;
+}
+nav a:hover {
+    background-color: rgb(212, 212, 212);
+    cursor: pointer;
+}
+.navbar-button:hover {
+    cursor: pointer;
+}
+.navbar-button i {
+    font-size: 64px;
+    transition-duration: 0.6s;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    perspective: 2px;
+    scroll-behavior: smooth;
+}
+  
+.section { 
+    position: relative;
+    height: 100vh;
+    display: flex;
+    color: white;
+}
+
+.parallax::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.53);
+    background-size: 100%;
+    z-index: -1;
+}
+
+.static {
+    background: #2D4B8F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg1::after {
+    background-image: url('https://www.cinemapolitica.org/sites/www.cinemapolitica.org/files/imagecache/feature_film/Sylvia%20D.%20Hamilton_5678_0.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+.bg2::after {
+    background-image: url('https://tce-live2.s3.amazonaws.com/media/media/0ef5865a-880e-4523-9e1e-234ef2fca9d5.jpg');
+    background-image: url('https://www.cinemapolitica.org/sites/www.cinemapolitica.org/files/imagecache/feature_film/Sylvia%20D.%20Hamilton_5678_0.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #27417ac0;
+    padding: 64px;
+    font-family: var(--font);
+}
+.title h1 {
+    font-size: 48px;
+    letter-spacing: 3px;
+}
+.title p {
+    font-family: inherit;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+}
+.paragraph-box {
+    width: 45vw;
+    height: 60vh;
+    padding: 32px;
+    background-color: #E2F0F9;
+    color: black;
+    margin: 16px;
+}
+
+#aboutImg {
+    width: 35vw;
+    height: 60vh;
+    border-radius: 50%;
+}
