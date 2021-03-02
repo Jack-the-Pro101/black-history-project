@@ -21,3 +21,9 @@ function showNavbar()
     document.querySelector('.navbar-button i').style = 'transform: rotate(180deg);'
     isNavbarVisable = true;
 }
+
+
+document.querySelector('#YAY').addEventListener('click',function()
+{
+    document.querySelector('#DONE').style.display = 'block';
+})

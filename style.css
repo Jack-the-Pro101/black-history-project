@@ -11,7 +11,15 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+h2 {
+    font-size: 48px;
+    color: white;
+    font-family: var(--fontMain);
+    position: absolute;
+    top: 0;
+    margin-top: 48px;
+    text-decoration: underline;
+}
 .navbar-button {
     border-radius: 5px;
     color: #3b5cb6;
@@ -51,6 +59,7 @@ nav a {
     justify-content: center;
     font-family: var(--fontMain);
     font-size: 30px;
+    user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     color: black;
@@ -114,12 +123,18 @@ nav a:hover {
 }
   
 .bg2::after {
-    background-image: url('https://tce-live2.s3.amazonaws.com/media/media/0ef5865a-880e-4523-9e1e-234ef2fca9d5.jpg');
-    background-image: url('https://www.cinemapolitica.org/sites/www.cinemapolitica.org/files/imagecache/feature_film/Sylvia%20D.%20Hamilton_5678_0.jpg');
+    background-image: url('https://www.thechronicleherald.ca/media/photologue/photos/cache/B97919816Z.1_20190604174233_000GPHOBUQH.1-1_large.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.bg3::after {
+    background-image: url('https://tce-live2.s3.amazonaws.com/media/media/0ef5865a-880e-4523-9e1e-234ef2fca9d5.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 .title {
     position: fixed;
@@ -141,6 +156,8 @@ nav a:hover {
     margin-top: 8px;
 }
 
+
+
 .about {
     display: flex;
     justify-content: space-evenly;
@@ -152,10 +169,103 @@ nav a:hover {
     background-color: #E2F0F9;
     color: black;
     margin: 16px;
+    font-family: var(--fontMain);
+    font-size: 20px;
 }
-
 #aboutImg {
     width: 35vw;
     height: 60vh;
     border-radius: 50%;
+}
+
+
+.accomplishments {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.accomplishments-title {
+    font-family: var(--font);
+    padding: 64px;
+    background-color: rgba(0, 0, 0, 0.575);
+    transform: translateZ(-0.5px);
+    font-size: 42px;
+}
+.accomplishments-paragraph {
+    width: 45vw;
+    height: 60vh;
+    padding: 32px;
+    background-color: #E2F0F9;
+    color: black;
+    font-family: var(--fontMain);
+    font-size: 20px;
+}
+.accomplishments-img {
+    width: 400px;
+    height: auto;
+    margin: 32px;
+}
+
+
+.other {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-other {
+    height: 250vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.interesting-facts {
+    font-size: 32px;
+    width: 45vw;
+    height: 60vh;
+    padding: 32px;
+    background-color: #E2F0F9;
+    color: black;
+    margin: 8px;
+    margin-top: 0px;
+    font-family: var(--fontMain);
+}
+.one-word {
+    font-size: 24px;
+    width: 45vw;
+    height: 60vh;
+    padding: 32px;
+    background-color: #E2F0F9;
+    color: black;
+    margin: 8px;
+    font-family: var(--fontMain);
+}
+.sources {
+    font-size: 32px;
+    width: 75vw;
+    height: 60vh;
+    padding: 32px;
+    margin-top: 64px;
+    color: black;
+    background-color: #E2F0F9;
+}
+button {
+    font-size: 64px;
+    text-align: center;
+    padding: 16px;
+    position: absolute;
+    bottom: 0;
+}
+
+#DONE {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#DONE img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
